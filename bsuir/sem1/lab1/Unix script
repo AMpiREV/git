@@ -1,0 +1,3 @@
+ls -la $1 | grep -oiE '(sep|oct|nov|dec|jan|fab|mar|apr|may|jun|jul|aug).*txt$' > result2.txt
+start result2.txt
+sleep 10

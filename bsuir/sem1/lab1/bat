@@ -1,0 +1,4 @@
+dir %1 | findstr txt > res.txt
+dir %1 /B| findstr txt > result1.txt
+for /F "tokens=1" %%i in (res.txt) do echo %%i >> result1.txt
+result1.txt

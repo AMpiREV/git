@@ -1,0 +1,126 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[leterpaper,top=0cm,bottom=1.8cm,left=1.5cm,right=1.5cm,marginparwidth=1.75cm]{geometry}
+\usepackage{multicol}
+\usepackage{enumitem}
+
+\begin{document}
+
+\renewcommand{\thesection}{\Roman{section}}
+
+\setcounter{page}{209}
+
+\title{\begin{center}
+\date{}
+\author{}
+\textbf{Principles of building a system for automating
+the activities of a process engineer based on an
+ontological approach within the framework of
+the Industry 4.0 concept} 
+\end{center}}
+\maketitle
+
+\vspace{-3cm}
+
+\begin{center}
+\begin{tabular}{c c c}
+\small{Valery Taberko, Dzmitry Ivaniuk}  & \small{Nikita Zotov, Maksim Orlov} & \hspace{-1cm}\small{Oleksandr Pupena, Nataliia Lutska} \\
+\small{\textit{JSC "Savushkin Product"}} & \small{\textit{Belarusian State University}} & \hspace{-0.5cm}\small{\textit{National University of Food Technologies}} \\
+\small{Brest, Republic of Belarus} & \small{\textit{of Informatics and Radioelectronics}} & \hspace{-1cm}\small{Kyiv, Ukraine} \\
+\small{tab@pda.savushkin.by} & \small{Minsk, Republic of Belarus} & \hspace{-1cm}\small{pupena\_sun@ukr.net} \\
+\small{id@pda.savushkin,by} & \small{nikita.zotov.belarus@gmail.com,} & \hspace{-1cm}\small{lutskanm2017@gmail.com} \\
+& \small{orlovmassimo@gmail.com} & \\
+\end{tabular}
+\end{center}
+\vspace{0.1cm}
+
+\setcounter{columns}{3}
+
+\begin{multicols}{2}
+\setlength\parindent{1.5em}
+\footnotesize{\textbf{\textit{Abstract}—In this article, an approach to the continuous
+development of automation of the processes of creating,
+developing and applying standards based on the OSTIS
+Technology is proposed. Examples of these processes due
+to the involvement of end-users of the system using the tools
+and mechanisms of the OSTIS Technology are considered.
+Examples of further formalization of standards within the
+framework of the proposed approach are given.}
+\par
+\setlength\parindent{1.5em}
+\textbf{\textit{Keywords}—automation of manufacturing processes, information service, ontological production model, Industry
+4.0, ontology, knowledge base, OSTIS Technology}}
+
+\vspace{-0.4cm}
+\begin{center}
+   \section{\small INTRODUCTION} 
+\end{center}
+\vspace{-0.40cm}
+
+\normalsize{The implementation of the Industry 4.0 concept at
+production facilities is accompanied by the development
+of a single ontological production model, which is the core
+of the complex information service of the enterprise. At
+the first stage of developing such an enterprise model, it
+is necessary to nest data on the lower level of production,
+namely on the manufacturing process and equipment. As
+the source of this data, P&ID-schemes of production
+can serve. Thus, the formalization of the ISA 5.1 [1]
+standard is necessary to work with P&ID-schemes, which
+are widely used in control systems together with the ISA
+88 [2] standard and allow describing the lower level of
+production in full. At the same time, it is also necessary
+to consider the approach of formalization of the subject
+domain based on the ISO 15926 [3], [4] standard, which
+describes the integration of data on the life cycle of
+processing enterprises into a single ontological storage.
+New users will be added: an automation engineer and a
+master, who implement the new capability of the intelligent search together with the developed model. For the
+current user – the operator of the manufacturing process
+– the implementation of the mechanism for obtaining
+intelligent information that covers both particular and
+common issues of the manufacturing process, equipment,}
+
+\vspace{0.2cm}
+\begin{center}
+    \section{\small BRIEFLY ABOUT ISA-5.1}
+\end{center}
+\vspace{-0.8cm}
+
+\normalsize{This standard describes the rules for drawing up
+functional schemes for the automation of manufacturing
+processes. Such schemes allow the graphical representation of the production technology and equipment as
+well as define the rules for identifying equipment and
+measuring and automation tools for design and service
+purposes. Figure 1 shows an example of a functional
+scheme.}
+\par
+\setlength\parindent{1.5em}
+\normalsize{The functional scheme shows: the coagulator itself (the
+unit), the lines (the machine) and the valves (the control
+device). Different colors indicate the purpose of the lines
+(red – washing, blue – mixture, green – whey, black –
+product). This fragment allows getting an insight into
+which devices are used and how they are connected.
+}
+
+\vspace{-0.4cm}
+\begin{center}
+\section{\small ONTOLOGIES IN PRODUCTION}
+\end{center}
+\vspace{-0.5cm}
+
+\normalsize{The ISA-88 article described how to use the knowledge
+base on the basis of the OSTIS [7] ontologies to train
+the operator with complex concepts, search for objects
+according to ISA-88 and their interrelations. The need for
+knowledge bases for production is not restricted to the
+above. Among the most complex problems that can be
+solved using knowledge bases on the basis of ontologies,
+there are:}
+\begin{itemize}
+\item decision support in unforeseen situations as well as
+start-ups and ends;
+\end{itemize}
+\end{multicols}
+\end{document}

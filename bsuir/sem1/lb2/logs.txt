@@ -1,0 +1,79 @@
+1. Git init
+2. git status
+3. Ветка - перемещаемый указатель на один из комитов. Обычно основная ветка - master.
+4. git add .
+5. git commit -m 'first commit'
+6. - Изменить файл "file"
+   - git add .
+   - git commit -m 'change file'
+7. git log
+8. git config --global
+9. -touch 2.txt
+   -git add 2.txt 
+   -git restore --staged '2.txt'
+10. -echo 1 > 'file'
+    -git diff 'file'
+11. git restore 'file'
+12. gitk \\gitk - встроенный графический интерфейсю История идёт от самого последнего комита до самого первого
+13. git add .
+14. -git config --local\--global user.name 'AMpiREV'
+    -git config --local\--global user.email 'dadanadandi@mail.ru'
+15. -git config --local\--global user.name 'name'
+    -git config --local\--global user.email 'email'
+16. git branch
+17. git branch newbranch1
+18. git checkout newbranch1
+19. git checkout -b newbranch2
+20. git branch -d newbranch1
+21. gitk --all
+22. -git checkout -b newbranch2
+    - touch 3.txt
+    - git add .
+    - git commit '3.txt'
+    - git checkout master
+    - git merge newbranch2
+23. -git checkout -b newbranch3
+    - touch conflict.txt
+    - echo '1 2 3 4' > 1.txt 
+    - git add .
+    - git commit -m 'conflict'
+    - git checkout master
+    - touch conflict.txt
+    - git add .
+    - git commit -m 'conflict'
+    - git merge newbranch3
+    - Конфликт возникает, когда в двух ветках была изменена одна и та же строка в файле или когда некий файл удален в одной ветке и отредактирован в другой
+    - Решение
+    - git reset \\на ветке newbranch3
+    - git add . \\newbranch3
+    - git commit -m 'fixed' \\newbranch3
+24. git status
+25. git merge --abort/ git reset
+26. -git log \\ смотрим хэш, хватит 5и символов
+    - git checkout 'xэш'
+    - git switch - \\ для перехода HEAD на master
+27. -git checkout хэш
+    -git reset --hard хэш
+    - git checkout -b 'newbranch4'
+    - touch 3.txt
+    -git add .
+    -git commit -m '3 add'
+    -git checkout master
+    touch 2.txt
+    -git add .
+    -git commit -m '2 add'
+    -git rebase branch4
+28. git rebase --continue
+29. git rebase --abort
+30. git rebase --skip
+31. git push origin main
+32. git fetch --all
+33. git fetch origin branch
+34. git clone <URL>
+35. -git rm <file>
+    -git mv <original_file_name> <new_file_name>
+36. -git remote add <name> <url> \\добавление
+    -git remote rm <NAME> \\ удаление
+    -git push origin master \\ отправка файла в ветке master
+37. git push origin <branch> \\пуш ветки
+    git push origin --delete <branch> \\ удаление ветки

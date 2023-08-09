@@ -1,0 +1,6 @@
+one 2 5
+two 3 4
+three 2
+four 2
+five 1 6
+six 5
