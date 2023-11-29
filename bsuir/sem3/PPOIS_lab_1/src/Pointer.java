@@ -4,6 +4,11 @@ public class Pointer {
     public Pointer(int num1){
        this.num1 = num1;
     }
+
+    /**
+     * создание Указателя
+     * @return srcArr
+     */
     public String[] create_srcArr() {
         String[] srcArr = new String[num1];
         srcArr[0] = "._.";
@@ -14,14 +19,25 @@ public class Pointer {
         }
         return srcArr;
     }
+
+    /**
+     *
+     * @param srcArr принимаем указатель, чтобы создать месте для его дальнейшего пути
+     * @return destArr - новый указатель с новым положением указателя
+     */
     public String[] create_destArr(String[] srcArr) {
-        String[] destArr = new String[srcArr.length+1];
-        return destArr;
+        return new String[srcArr.length+1];
     }
 
+    /**
+     *
+     * @param srcArr Двигаем указатель влево, если указатель дальше идти не может
+     *               то создаём новое место
+     * @return srcArr - Указатель передвинутый влево
+     */
     public String[] moveLeft(String[] srcArr){
         for (int i = 0; i < srcArr.length; i++){
-            if (srcArr[i] == "._."){ position = i; }
+            if (srcArr[i].equals("._.")){ position = i; }
         }
         if(position == 0){
             String[] destArr = create_destArr(srcArr);
@@ -35,15 +51,22 @@ public class Pointer {
             srcArr[position] = "...";
             srcArr[position-1] = "._.";
         }
-        for(int i = 0; i < srcArr.length; i++){
-            System.out.print(srcArr[i]);
+        for (String s : srcArr) {
+            System.out.print(s);
         }
         return srcArr;
 
     }
+
+    /**
+     *
+     * @param srcArr Двигаем указатель вправо, если указатель дальше идти не может
+     *               то создаём новое место
+     * @return srcArr Указатель передвинутый вправо
+     */
     public String[] moveRight(String[] srcArr) {
         for (int i = 0; i < srcArr.length; i++) {
-            if (srcArr[i] == "._.") {
+            if (srcArr[i].equals("._.") ) {
                 position = i;
             }
         }
@@ -58,14 +81,21 @@ public class Pointer {
             srcArr[position] = "...";
             srcArr[position+1] = "._.";
         }
-        for (int i = 0; i < srcArr.length; i++) {
-            System.out.print(srcArr[i]);
+        for (String s : srcArr) {
+            System.out.print(s);
         }
         return srcArr;
     }
+
+    /**
+     *
+     * @param srcArr
+     * выводим текущее положение указателя
+     * @return srcArr
+     */
     public String[] viewArr(String[] srcArr){
-        for(int i = 0; i < srcArr.length; i++){
-            System.out.print(srcArr[i]);
+        for (String s : srcArr) {
+            System.out.print(s);
         }
         return srcArr;
     }

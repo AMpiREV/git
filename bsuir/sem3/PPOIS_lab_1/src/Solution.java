@@ -2,6 +2,12 @@ public class Solution {
     int sum;
     int number_of_labels;
 
+    /**
+     *
+     * @param srcLine
+     * Находит Метку на ленте и считает их по формуле n-1
+     * @return sum
+     */
     public int makeSolution(String[] srcLine) {
         for (int i = 0; i < srcLine.length; i++) {
             if (srcLine[i].equals("[V]")) {

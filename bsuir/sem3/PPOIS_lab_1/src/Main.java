@@ -6,13 +6,17 @@ public class Main {
         Scanner scan = new Scanner(System.in);
         System.out.print("Количество ячеек в значальной ленте =: ");
         int num1 = scan.nextInt();
-        int num2 = num1;
+        if(num1 <= 0){
+            String error = "Лента отсутствует";
+            System.out.println(error);
+            return;
+        }
         String[] srcArr, srcLine;
         Pointer pointer = new Pointer(num1);
         srcArr = pointer.create_srcArr();
-        if(srcArr[0] == "Лента отсутствует"){return;}
+        if(srcArr[0].equals("Лента отсутствует")){return;}
         System.out.println();
-        MachineLine line = new MachineLine(num2);
+        MachineLine line = new MachineLine(num1);
         srcLine = line.create_srcLine();
         System.out.println();
         while(true){
