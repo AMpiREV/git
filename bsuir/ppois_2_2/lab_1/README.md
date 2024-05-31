@@ -61,7 +61,8 @@ class Parking:
 Класс Tariff используется как класс родитель к классу Manager
 
 ##### Фрагмент кода:
-```class Tariff:
+```python
+class Tariff:
     def washing(self):
         print("Машина помыта")
 
