@@ -20,11 +20,11 @@
 ### Примеры
 Пример входящей структуры:
 
-<img src="error_code_input.png"></img>
+<img src="input1.png"></img>
 
 Пример выходящей структуры:
 
-<img src="error_code_output.png"></img>
+<img src="out1.png"></img>
 
 ### Результат
 
@@ -56,13 +56,13 @@
 
 ### Примеры
 Пример логического правила для создания текста:
-<img src="rules_set1.png"></img>
+<img src="rules.png"></img>
 
 Пример входящей структуры:
-<img src="out_message_input3.png"></img>
+<img src="input2.png"></img>
 
 Пример выходной структуры:
-<img src="out_message_output3.png"></img>
+<img src="out2.png"></img>
 
 ### Результат
 
