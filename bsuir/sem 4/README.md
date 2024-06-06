@@ -59,9 +59,11 @@
 <img src="rules.png"></img>
 
 Пример входящей структуры:
+
 <img src="input2.png"></img>
 
 Пример выходной структуры:
+
 <img src="out2.png"></img>
 
 ### Результат
